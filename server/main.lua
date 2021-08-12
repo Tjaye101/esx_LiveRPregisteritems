@@ -2,115 +2,36 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 ---Items for hunger
-ESX.RegisterUsableItem('burger', function(source)
+ESX.RegisterUsableItem('pizza', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('burger', 1)
+	xPlayer.removeInventoryItem('pizza', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 300000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_burger'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_pizza'))
 end)
 
-ESX.RegisterUsableItem('taco', function(source)
+ESX.RegisterUsableItem('hotdog', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('taco', 1)
+	xPlayer.removeInventoryItem('hotdog', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_taco'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_hotdog'))
 end)
 
-ESX.RegisterUsableItem('spaghetti', function(source)
+ESX.RegisterUsableItem('lays', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('spaghetti', 1)
+	xPlayer.removeInventoryItem('lays', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 2500000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_spaghetti'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_lays'))
 end)
 
---[[ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)]]
 ---Items for thirst
 ESX.RegisterUsableItem('cocacola', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -122,105 +43,26 @@ ESX.RegisterUsableItem('cocacola', function(source)
 	TriggerClientEvent('esx:showNotification', source, _U('used_cocacola'))
 end)
 
-ESX.RegisterUsableItem('mtndew', function(source)
+ESX.RegisterUsableItem('iced', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('mtndew', 1)
+	xPlayer.removeInventoryItem('iced', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_mtndew'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_iced'))
 end)
 
-ESX.RegisterUsableItem('monsterenergy', function(source)
+ESX.RegisterUsableItem('sprite', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('monsterenergy', 1)
+	xPlayer.removeInventoryItem('sprite', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'thirst', 500000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_monsterenergy'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_sprite'))
 end)
 
---[[ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-end)]]
 ---Items for drunk
 ESX.RegisterUsableItem('beer', function(source)
 
@@ -245,102 +87,6 @@ ESX.RegisterUsableItem('tequila', function(source)
 	TriggerClientEvent('esx:showNotification', source, _U('used_tequila'))
 
 end)
-
---[[ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)
-
-ESX.RegisterUsableItem('RENAME', function(source)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('RENAME', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'RENAME', 250000)
-	TriggerClientEvent('esx_optionalneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_RENAME'))
-
-end)]]
 
 
 TriggerEvent('es:addGroupCommand', 'heal', 'admin', function(source, args, user)
