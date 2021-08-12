@@ -12,6 +12,9 @@ This script implements items for food, water and drunk.
 - Download and unzip the file
 - Rename the file to esx_LiveRPregisteritems
 - Put in your ESX folder
+- Navigate to your inventory folder
+- find the icons folder (or wherever you put images for items)
+- use the inventory images folder to get images for item
 - Then add to server cfg. (put what is below)
 
 ```
@@ -20,22 +23,19 @@ start esx_LiveRPregisteritems
 
 You will need to add these Items to your database:
 
-burger  -   Burger
+pizza  -   Pizza
 
-cocacola - Coca-cola
+hotdog -  Hot Dog
 
-mtndew -  Mtn Dew
+lays  - Lays Chips
 
-taco -  Taco
+cocacola - Coca-col a
 
-monsterenergy  -  Monster Energy
+iced -  Iced tea
 
-spaghetti  -  Bowl of Spaghetti
+sprite  -  Sprite
 
 tequila  -  Tequila
 
-## I have added alot more characters within the server main.lua you will see that it is commented out, to uncomment out you would remove the --[[ 
-   from the beginning of the script and then remove the ]]
+beer  -  Beer
 
-
-##If you use Inventory HUD, please read the READ ME for Installation instructions for the images
