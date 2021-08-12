@@ -29,7 +29,7 @@ hotdog -  Hot Dog
 
 lays  - Lays Chips
 
-cocacola - Coca-col a
+cocacola - Coca-cola
 
 iced -  Iced tea
 
