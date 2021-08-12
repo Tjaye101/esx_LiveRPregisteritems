@@ -1,6 +1,5 @@
 Locales['en'] = {
-  ['used_bread'] = 'you have used ~y~1x~s~ ~b~bread~s~',
-  ['used_water'] = 'you have used ~y~1x~s~ ~b~water~s~',
+  ['used_beer'] = 'you have used ~y~1x~s~ ~b~Beer~s~',
   ['used_burger'] = 'you have used ~y~1x~s~ ~b~Burger~s~',
   ['used_taco'] = 'you have used ~y~1x~s~ ~b~Taco~s~',
   ['used_liverpultra'] = 'you have used ~y~1x~s~ ~b~Live RP Ultra Energy~s~',
